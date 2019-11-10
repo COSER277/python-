@@ -33,7 +33,7 @@ for url in urls:
         break
     content_text=content[0].text
     next_url=next_links[2]['href']
-    urls.append('https://www.ddxsku.com'+next_url)
+    urls.append('网站地址你懂得'+next_url)
     io = open('{0}.txt'.format(title_text), "ab+")
     io.write(content_text.encode('UTF-8')) 
     print(title_text+'-'+"保存成功...")
