@@ -14,7 +14,7 @@ headers={
 }
 
 #网站地址
-path="https://www.ddxsku.com"
+path="dingdianxiaoshuodizhi 你懂得"
 #分类列表
 categoryList=[]
 #小说列表
@@ -67,7 +67,7 @@ def GetStories(url):
         link=story.find("td").select("a")[0]["href"]
         name=story.find("td").text
         link=link[:-5]
-        link="https://www.ddxsku.com/files/article/html/88"+link[len(path)+len("/xiaoshuo"):]
+        link=path+"/files/article/html/88"+link[len(path)+len("/xiaoshuo"):]
         obj={"link":link,"name":name}
         storyList.append(obj)
     print("获取所有小说成功...\n")
